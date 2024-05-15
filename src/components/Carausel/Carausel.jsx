@@ -11,13 +11,14 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
 import Card from '../Card/Card';
+import './carausal.css'
 
 
 const Carausel = ({allData,type}) => {
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={type==='service'? (3):('auto')}
         spaceBetween={30}
         pagination={{
           clickable: true,
@@ -27,7 +28,7 @@ const Carausel = ({allData,type}) => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        {allData.map(items => (<SwiperSlide><Card data={items} type={type}/></SwiperSlide>))}
+        {allData.map(items => (<SwiperSlide className={type==='specialist' ? ('swiperSlide'):('')}><Card data={items} type={type}/></SwiperSlide>))}
       </Swiper>
     </>
   )

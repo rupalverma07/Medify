@@ -1,9 +1,9 @@
 import img1 from '../assets/Group 10.png';
 import img2 from '../assets/Group 11.png';
 import img3 from '../assets/Group 12.png';
-import dr1 from '../assets/div.med-stl-3-photo (1).png'
-import dr2 from '../assets/div.med-stl-3-photo (2).png'
-import dr3 from '../assets/div.med-stl-3-photo (4).png'
+import dr1 from '../assets/div.med-stl-3-photo-inner (3).png'
+import dr2 from '../assets/div.med-stl-3-photo-inner (5).png'
+import dr3 from '../assets/div.med-stl-3-photo-inner (4).png'
 
 export const promoImg = [img1,img2,img3,img1,img2,img3]
 

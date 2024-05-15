@@ -8,11 +8,11 @@ const Card = ({data,type}) => {
       (
         <div className='drCard'>
         <img src={data.imgUrl} alt='card img' className='drImg'/>
-        <div className=" drText">
+        {/* <div className=" drText"> */}
         <h5 className="drName">{data.name}</h5>
         <p className="drSubText">{data.specialist}</p>
       
-    </div>
+    {/* </div> */}
   </div>
   )}
   </>
